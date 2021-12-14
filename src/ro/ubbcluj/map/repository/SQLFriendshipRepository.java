@@ -107,7 +107,7 @@ public class SQLFriendshipRepository implements Repository<Long, Friendship> {
             e.printStackTrace();
         }
     }
-
+//testtttttt
     public Long getNumberOf() {
         Long numberOfElem = null;
 
