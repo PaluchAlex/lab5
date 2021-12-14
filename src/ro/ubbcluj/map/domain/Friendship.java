@@ -1,12 +1,13 @@
 package ro.ubbcluj.map.domain;
 
 import java.time.LocalDate;
+import java.util.Date;
 import java.util.Objects;
 
 public class Friendship extends Entity<Long> {
     private final Long userId1;
     private final Long userId2;
-    //private Date;
+ //   Date date;
 
 
     public Friendship(long id, Long userId1, Long userId2) {

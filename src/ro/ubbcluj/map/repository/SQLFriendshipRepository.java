@@ -75,7 +75,7 @@ public class SQLFriendshipRepository implements Repository<Long, Friendship> {
 
     @Override
     public void save(Friendship entity) {
-        String sql = "insert into friendships(id, id_user1, id_user2, date) values(?, ?, ?, ?)";
+        String sql = "insert into friendships(id, id_user1, id_user2) values(?, ?, ?)";
         validator.validate(entity);
 
         try(Connection connection = DriverManager.getConnection(url, username, password);
@@ -84,7 +84,7 @@ public class SQLFriendshipRepository implements Repository<Long, Friendship> {
             statement.setInt(1, entity.getId().intValue());
             statement.setInt(2, entity.getUserId1().intValue());
             statement.setInt(3, entity.getUserId2().intValue());
-      //      statement.setDate(4, entity.getDate());
+  //          statement.setDate(4, entity.getDate());
 
             statement.executeUpdate();
 
