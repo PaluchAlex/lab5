@@ -36,7 +36,7 @@ public class SQLFriendshipRepository implements Repository<Long, Friendship> {
             long id = resultSet.getLong("id");
             Long id_user1 = resultSet.getLong("id_user1");
             Long id_user2 = resultSet.getLong("id_user2");
-           // Date date = resultSet.getDate("date");
+            Date date = resultSet.getDate("date");
 
 
             friendship = new Friendship(id, id_user1, id_user2);
