@@ -108,6 +108,7 @@ public class SQLFriendshipRepository implements Repository<Long, Friendship> {
         }
     }
 //testtttttt
+    //mai multe commenturi inutile.........
     public Long getNumberOf() {
         Long numberOfElem = null;
 
